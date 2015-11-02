@@ -1,0 +1,24 @@
+
+Call:
+glm(formula = PSObeatDSSP ~ nodeCnt, family = binomial(logit), 
+    data = mydata)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.87073   0.01695   0.18094   0.57071   0.57071  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -0.63948    1.20800  -0.529   0.5965  
+nodeCnt      0.09487    0.04161   2.280   0.0226 *
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 77.241  on 179  degrees of freedom
+Residual deviance: 60.915  on 178  degrees of freedom
+AIC: 64.915
+
+Number of Fisher Scoring iterations: 8
+

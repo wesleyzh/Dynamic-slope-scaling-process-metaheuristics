@@ -1,0 +1,68 @@
+[1] "Node=25"
+[1] "ANOVA of Gap"
+             Df Sum Sq  Mean Sq F value Pr(>F)
+Algorithm     2 0.0004 0.000212   0.037  0.964
+Residuals   177 1.0211 0.005769               
+[1] "ANOVA of Time"
+             Df Sum Sq Mean Sq F value   Pr(>F)    
+Algorithm     2   2950  1474.9   8.259 0.000372 ***
+Residuals   177  31610   178.6                     
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+[1] "TukeyTest"
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Time ~ Algorithm, data = data1)
+
+$Algorithm
+             diff       lwr       upr     p adj
+SAB-PSO  7.553424  1.786608 13.320240 0.0064262
+SAVF-PSO 9.340377  3.573561 15.107192 0.0005227
+SAVF-SAB 1.786953 -3.979863  7.553768 0.7445959
+
+[1] "Node=50"
+[1] "ANOVA of Gap"
+             Df Sum Sq  Mean Sq F value Pr(>F)
+Algorithm     2 0.0021 0.001027   0.223    0.8
+Residuals   177 0.8154 0.004607               
+[1] "ANOVA of Time"
+             Df   Sum Sq Mean Sq F value Pr(>F)
+Algorithm     2    43881   21940   0.246  0.782
+Residuals   177 15773307   89115               
+[1] "TukeyTest"
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Time ~ Algorithm, data = data2)
+
+$Algorithm
+             diff       lwr      upr     p adj
+SAB-PSO   0.00000 -128.8213 128.8213 1.0000000
+SAVF-PSO 33.12132  -95.7000 161.9426 0.8161017
+SAVF-SAB 33.12132  -95.7000 161.9426 0.8161017
+
+[1] "Node=100"
+[1] "ANOVA of Gap"
+             Df Sum Sq   Mean Sq F value Pr(>F)
+Algorithm     2 0.0009 0.0004322   0.175   0.84
+Residuals   163 0.4036 0.0024762               
+14 observations deleted due to missingness
+[1] "ANOVA of Time"
+             Df    Sum Sq  Mean Sq F value   Pr(>F)    
+Algorithm     2 1.901e+08 95045221   12.01 1.29e-05 ***
+Residuals   177 1.401e+09  7915402                     
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+[1] "TukeyTest"
+  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = Time ~ Algorithm, data = data3)
+
+$Algorithm
+             diff        lwr      upr     p adj
+SAB-PSO  1291.957   77.87064 2506.043 0.0340250
+SAVF-PSO 2516.913 1302.82706 3730.999 0.0000064
+SAVF-SAB 1224.956   10.87035 2439.042 0.0474452
+

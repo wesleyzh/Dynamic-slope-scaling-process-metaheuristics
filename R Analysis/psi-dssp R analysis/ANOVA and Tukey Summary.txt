@@ -1,0 +1,7 @@
+1.For the gap, all the techniques do not have significant difference.
+
+2.For the running time, when the number of nodes equal to 50, all the techniques do not have significant difference; in the other two cases, PSO<TS<SAB<SAVF.
+
+3.For the iterations with 1% improvement, when the number of nodes equal to 50, all the techniques do not have significant difference; in the other two cases, PSO<TS<SAB<SAVF.
+
+Besides, I have ploted and tested the correlationship between speed and FCNF characteristic (e.g., density, gamma), but did not find useful imformation. The iterations with 1% improvement is not affected by the FCNF characteristic.

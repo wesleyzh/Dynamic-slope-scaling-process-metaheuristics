@@ -1,0 +1,81 @@
+Start:  AIC=79.24
+PSObeatDSSP ~ 1
+
+                Df Deviance    AIC
++ nodeCnt        1   60.915 64.915
++ avgFC          1   65.807 69.807
++ noV            1   66.461 70.461
+<none>               77.241 79.241
++ gamma          1   75.891 79.891
++ averagesupply  1   76.534 80.534
++ pdemandnodes   1   76.580 80.580
++ density        1   76.642 80.642
++ psupplynodes   1   77.228 81.228
+
+Step:  AIC=64.91
+PSObeatDSSP ~ nodeCnt
+
+                Df Deviance    AIC
++ avgFC          1   52.908 58.908
++ gamma          1   57.761 63.761
++ averagesupply  1   58.671 64.671
+<none>               60.915 64.915
++ pdemandnodes   1   59.802 65.802
++ density        1   59.820 65.820
++ noV            1   60.806 66.806
++ psupplynodes   1   60.908 66.908
+- nodeCnt        1   77.241 79.241
+
+Step:  AIC=58.91
+PSObeatDSSP ~ nodeCnt + avgFC
+
+                Df Deviance    AIC
+<none>               52.908 58.908
++ averagesupply  1   51.590 59.590
++ gamma          1   51.620 59.620
++ pdemandnodes   1   52.278 60.278
++ density        1   52.545 60.545
++ noV            1   52.589 60.589
++ nodeCnt:avgFC  1   52.905 60.905
++ psupplynodes   1   52.906 60.906
+- avgFC          1   60.915 64.915
+- nodeCnt        1   65.807 69.807
+
+Call:
+glm(formula = PSObeatDSSP ~ nodeCnt + avgFC, family = binomial(logit), 
+    data = mydata)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.83912   0.01958   0.15476   0.31091   0.84733  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept) 21.371448  10.671695   2.003   0.0452 *
+nodeCnt      0.088547   0.041793   2.119   0.0341 *
+avgFC       -0.005407   0.002603  -2.077   0.0378 *
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 77.241  on 179  degrees of freedom
+Residual deviance: 52.908  on 177  degrees of freedom
+AIC: 58.908
+
+Number of Fisher Scoring iterations: 8
+
+Stepwise Model Path 
+Analysis of Deviance Table
+
+Initial Model:
+PSObeatDSSP ~ 1
+
+Final Model:
+PSObeatDSSP ~ nodeCnt + avgFC
+
+
+       Step Df  Deviance Resid. Df Resid. Dev      AIC
+1                              179   77.24130 79.24130
+2 + nodeCnt  1 16.326304       178   60.91499 64.91499
+3   + avgFC  1  8.006943       177   52.90805 58.90805

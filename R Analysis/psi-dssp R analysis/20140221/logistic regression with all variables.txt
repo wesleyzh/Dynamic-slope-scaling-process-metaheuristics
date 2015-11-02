@@ -1,0 +1,571 @@
+
+Call:
+glm(formula = PSObeatDSSP ~ nodeCnt + density + noV + avgFC + 
+    psupplynodes + pdemandnodes + averagesupply + gamma, family = binomial(logit), 
+    data = mydata)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.85104   0.02661   0.12928   0.30581   0.91711  
+
+Coefficients:
+                Estimate Std. Error z value Pr(>|z|)  
+(Intercept)    3.027e+01  3.708e+01   0.816   0.4143  
+nodeCnt        1.550e-01  7.940e-02   1.952   0.0509 .
+density        1.388e+00  1.812e+00   0.766   0.4436  
+noV           -1.056e-03  8.342e-04  -1.266   0.2056  
+avgFC         -8.983e-03  9.132e-03  -0.984   0.3252  
+psupplynodes   6.865e+00  7.236e+00   0.949   0.3428  
+pdemandnodes  -5.103e+00  1.044e+01  -0.489   0.6251  
+averagesupply  1.910e-02  3.439e-02   0.556   0.5785  
+gamma         -6.805e+01  1.372e+02  -0.496   0.6198  
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 77.241  on 179  degrees of freedom
+Residual deviance: 49.198  on 171  degrees of freedom
+AIC: 67.198
+
+Number of Fisher Scoring iterations: 9
+
+
+Call:
+glm(formula = PSObeatDSSP ~ nodeCnt * density * noV * avgFC * 
+    psupplynodes * pdemandnodes * averagesupply * gamma, family = binomial(logit), 
+    data = mydata)
+
+Deviance Residuals: 
+  [1]  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+ [37]  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+ [73]  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+[109]  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+[145]  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+
+Coefficients: (76 not defined because of singularities)
+                                                                          Estimate Std. Error    z value Pr(>|z|)
+(Intercept)                                                             -1.154e+31  7.622e+13 -1.515e+17   <2e-16
+nodeCnt                                                                  1.205e+29  7.694e+11  1.566e+17   <2e-16
+density                                                                  1.847e+30  3.072e+13  6.012e+16   <2e-16
+noV                                                                     -4.080e+28  2.735e+11 -1.492e+17   <2e-16
+avgFC                                                                    2.725e+27  1.798e+10  1.516e+17   <2e-16
+psupplynodes                                                             4.980e+31  3.383e+14  1.472e+17   <2e-16
+pdemandnodes                                                             1.023e+32  6.808e+14  1.503e+17   <2e-16
+averagesupply                                                            4.270e+29  2.901e+12  1.472e+17   <2e-16
+gamma                                                                   -9.079e+32  6.180e+15 -1.469e+17   <2e-16
+nodeCnt:density                                                          2.972e+30  2.014e+13  1.476e+17   <2e-16
+nodeCnt:noV                                                                     NA         NA         NA       NA
+density:noV                                                             -1.386e+29  9.608e+11 -1.442e+17   <2e-16
+nodeCnt:avgFC                                                           -2.667e+25  1.708e+08 -1.561e+17   <2e-16
+density:avgFC                                                           -7.272e+26  8.708e+09 -8.352e+16   <2e-16
+noV:avgFC                                                                9.930e+24  6.663e+07  1.490e+17   <2e-16
+nodeCnt:psupplynodes                                                    -5.486e+29  3.749e+12 -1.463e+17   <2e-16
+density:psupplynodes                                                    -1.261e+31  1.467e+14 -8.594e+16   <2e-16
+noV:psupplynodes                                                         1.078e+29  7.318e+11  1.473e+17   <2e-16
+avgFC:psupplynodes                                                      -1.186e+28  8.058e+10 -1.471e+17   <2e-16
+nodeCnt:pdemandnodes                                                    -5.807e+30  3.923e+13 -1.480e+17   <2e-16
+density:pdemandnodes                                                    -1.499e+31  1.515e+14 -9.898e+16   <2e-16
+noV:pdemandnodes                                                         5.172e+29  3.550e+12  1.457e+17   <2e-16
+avgFC:pdemandnodes                                                      -2.526e+28  1.680e+11 -1.504e+17   <2e-16
+psupplynodes:pdemandnodes                                               -3.262e+32  2.197e+15 -1.485e+17   <2e-16
+nodeCnt:averagesupply                                                   -2.360e+28  1.602e+11 -1.473e+17   <2e-16
+density:averagesupply                                                    1.955e+30  1.316e+13  1.485e+17   <2e-16
+noV:averagesupply                                                        2.941e+27  1.977e+10  1.488e+17   <2e-16
+avgFC:averagesupply                                                     -4.954e+25  3.359e+08 -1.475e+17   <2e-16
+psupplynodes:averagesupply                                              -1.418e+30  9.655e+12 -1.468e+17   <2e-16
+pdemandnodes:averagesupply                                              -2.262e+30  1.535e+13 -1.474e+17   <2e-16
+nodeCnt:gamma                                                            4.944e+31  3.360e+14  1.471e+17   <2e-16
+density:gamma                                                           -4.026e+33  2.712e+16 -1.484e+17   <2e-16
+noV:gamma                                                               -6.026e+30  4.053e+13 -1.487e+17   <2e-16
+avgFC:gamma                                                                     NA         NA         NA       NA
+psupplynodes:gamma                                                       2.860e+33  1.949e+16  1.468e+17   <2e-16
+pdemandnodes:gamma                                                       4.591e+33  3.123e+16  1.470e+17   <2e-16
+averagesupply:gamma                                                      7.434e+28  5.092e+11  1.460e+17   <2e-16
+nodeCnt:density:noV                                                      1.377e+27  9.644e+09  1.428e+17   <2e-16
+nodeCnt:density:avgFC                                                   -7.260e+26  4.919e+09 -1.476e+17   <2e-16
+nodeCnt:noV:avgFC                                                               NA         NA         NA       NA
+density:noV:avgFC                                                        3.482e+25  2.414e+08  1.443e+17   <2e-16
+nodeCnt:density:psupplynodes                                            -9.419e+30  6.413e+13 -1.469e+17   <2e-16
+nodeCnt:noV:psupplynodes                                                        NA         NA         NA       NA
+density:noV:psupplynodes                                                 4.513e+29  3.128e+12  1.443e+17   <2e-16
+nodeCnt:avgFC:psupplynodes                                               1.243e+26  8.585e+08  1.448e+17   <2e-16
+density:avgFC:psupplynodes                                               3.532e+27  3.830e+10  9.222e+16   <2e-16
+noV:avgFC:psupplynodes                                                  -2.619e+25  1.781e+08 -1.471e+17   <2e-16
+nodeCnt:density:pdemandnodes                                            -5.841e+30  4.350e+13 -1.343e+17   <2e-16
+nodeCnt:noV:pdemandnodes                                                        NA         NA         NA       NA
+density:noV:pdemandnodes                                                -2.831e+28  2.023e+11 -1.399e+17   <2e-16
+nodeCnt:avgFC:pdemandnodes                                               1.456e+27  9.848e+09  1.478e+17   <2e-16
+density:avgFC:pdemandnodes                                               6.103e+27  4.351e+10  1.403e+17   <2e-16
+noV:avgFC:pdemandnodes                                                  -1.280e+26  8.794e+08 -1.456e+17   <2e-16
+nodeCnt:psupplynodes:pdemandnodes                                        1.159e+31  7.853e+13  1.476e+17   <2e-16
+density:psupplynodes:pdemandnodes                                        2.348e+32  1.570e+15  1.495e+17   <2e-16
+noV:psupplynodes:pdemandnodes                                           -9.351e+29  6.417e+12 -1.457e+17   <2e-16
+avgFC:psupplynodes:pdemandnodes                                          7.967e+28  5.365e+11  1.485e+17   <2e-16
+nodeCnt:density:averagesupply                                           -1.174e+29  7.879e+11 -1.490e+17   <2e-16
+nodeCnt:noV:averagesupply                                                       NA         NA         NA       NA
+density:noV:averagesupply                                               -1.894e+27  1.300e+10 -1.457e+17   <2e-16
+nodeCnt:avgFC:averagesupply                                              2.801e+24  1.900e+07  1.474e+17   <2e-16
+density:avgFC:averagesupply                                             -2.373e+26  1.596e+09 -1.487e+17   <2e-16
+noV:avgFC:averagesupply                                                 -3.585e+23  2.407e+06 -1.489e+17   <2e-16
+nodeCnt:psupplynodes:averagesupply                                       7.315e+28  4.957e+11  1.476e+17   <2e-16
+density:psupplynodes:averagesupply                                      -4.361e+30  2.960e+13 -1.473e+17   <2e-16
+noV:psupplynodes:averagesupply                                          -7.596e+27  5.121e+10 -1.483e+17   <2e-16
+avgFC:psupplynodes:averagesupply                                         1.741e+26  1.185e+09  1.469e+17   <2e-16
+nodeCnt:pdemandnodes:averagesupply                                       1.101e+29  7.448e+11  1.479e+17   <2e-16
+density:pdemandnodes:averagesupply                                      -1.166e+31  7.915e+13 -1.473e+17   <2e-16
+noV:pdemandnodes:averagesupply                                          -1.606e+28  1.082e+11 -1.484e+17   <2e-16
+avgFC:pdemandnodes:averagesupply                                         2.772e+26  1.875e+09  1.478e+17   <2e-16
+psupplynodes:pdemandnodes:averagesupply                                  7.709e+30  5.243e+13  1.470e+17   <2e-16
+nodeCnt:density:gamma                                                    2.378e+32  1.596e+15  1.490e+17   <2e-16
+nodeCnt:noV:gamma                                                               NA         NA         NA       NA
+density:noV:gamma                                                        4.148e+30  2.851e+13  1.455e+17   <2e-16
+nodeCnt:avgFC:gamma                                                             NA         NA         NA       NA
+density:avgFC:gamma                                                             NA         NA         NA       NA
+noV:avgFC:gamma                                                                 NA         NA         NA       NA
+nodeCnt:psupplynodes:gamma                                              -1.477e+32  1.001e+15 -1.476e+17   <2e-16
+density:psupplynodes:gamma                                               9.080e+33  6.165e+16  1.473e+17   <2e-16
+noV:psupplynodes:gamma                                                   1.538e+31  1.037e+14  1.483e+17   <2e-16
+avgFC:psupplynodes:gamma                                                        NA         NA         NA       NA
+nodeCnt:pdemandnodes:gamma                                              -2.162e+32  1.464e+15 -1.477e+17   <2e-16
+density:pdemandnodes:gamma                                               2.367e+34  1.605e+17  1.475e+17   <2e-16
+noV:pdemandnodes:gamma                                                   3.158e+31  2.127e+14  1.485e+17   <2e-16
+avgFC:pdemandnodes:gamma                                                        NA         NA         NA       NA
+psupplynodes:pdemandnodes:gamma                                         -1.525e+34  1.039e+17 -1.468e+17   <2e-16
+nodeCnt:averagesupply:gamma                                             -2.695e+27  1.821e+10 -1.479e+17   <2e-16
+density:averagesupply:gamma                                             -3.834e+28  2.499e+11 -1.534e+17   <2e-16
+noV:averagesupply:gamma                                                  1.505e+26  1.049e+09  1.435e+17   <2e-16
+avgFC:averagesupply:gamma                                               -1.959e+25  1.341e+08 -1.461e+17   <2e-16
+psupplynodes:averagesupply:gamma                                        -2.044e+28  1.701e+11 -1.202e+17   <2e-16
+pdemandnodes:averagesupply:gamma                                        -1.958e+29  1.415e+12 -1.384e+17   <2e-16
+nodeCnt:density:noV:avgFC                                               -3.451e+23  2.417e+06 -1.428e+17   <2e-16
+nodeCnt:density:noV:psupplynodes                                        -4.281e+27  3.004e+10 -1.425e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes                                       2.319e+27  1.580e+10  1.468e+17   <2e-16
+nodeCnt:noV:avgFC:psupplynodes                                                  NA         NA         NA       NA
+density:noV:avgFC:psupplynodes                                          -1.134e+26  7.862e+08 -1.443e+17   <2e-16
+nodeCnt:density:noV:pdemandnodes                                        -4.738e+27  3.373e+10 -1.405e+17   <2e-16
+nodeCnt:density:avgFC:pdemandnodes                                       1.341e+27  1.007e+10  1.332e+17   <2e-16
+nodeCnt:noV:avgFC:pdemandnodes                                                  NA         NA         NA       NA
+density:noV:avgFC:pdemandnodes                                           5.362e+24  4.126e+07  1.299e+17   <2e-16
+nodeCnt:density:psupplynodes:pdemandnodes                                2.050e+31  1.444e+14  1.420e+17   <2e-16
+nodeCnt:noV:psupplynodes:pdemandnodes                                           NA         NA         NA       NA
+density:noV:psupplynodes:pdemandnodes                                   -8.453e+29  5.903e+12 -1.432e+17   <2e-16
+nodeCnt:avgFC:psupplynodes:pdemandnodes                                 -2.879e+27  1.953e+10 -1.474e+17   <2e-16
+density:avgFC:psupplynodes:pdemandnodes                                 -6.401e+28  4.268e+11 -1.500e+17   <2e-16
+noV:avgFC:psupplynodes:pdemandnodes                                      2.292e+26  1.575e+09  1.455e+17   <2e-16
+nodeCnt:density:noV:averagesupply                                        8.952e+24  6.557e+07  1.365e+17   <2e-16
+nodeCnt:density:avgFC:averagesupply                                      1.448e+25  9.709e+07  1.491e+17   <2e-16
+nodeCnt:noV:avgFC:averagesupply                                                 NA         NA         NA       NA
+density:noV:avgFC:averagesupply                                          2.143e+23  1.468e+06  1.460e+17   <2e-16
+nodeCnt:density:psupplynodes:averagesupply                               2.526e+29  1.714e+12  1.474e+17   <2e-16
+nodeCnt:noV:psupplynodes:averagesupply                                          NA         NA         NA       NA
+density:noV:psupplynodes:averagesupply                                   7.636e+27  5.178e+10  1.475e+17   <2e-16
+nodeCnt:avgFC:psupplynodes:averagesupply                                -9.027e+24  6.115e+07 -1.476e+17   <2e-16
+density:avgFC:psupplynodes:averagesupply                                 5.241e+26  3.558e+09  1.473e+17   <2e-16
+noV:avgFC:psupplynodes:averagesupply                                     9.376e+23  6.321e+06  1.483e+17   <2e-16
+nodeCnt:density:pdemandnodes:averagesupply                               7.982e+29  5.418e+12  1.473e+17   <2e-16
+nodeCnt:noV:pdemandnodes:averagesupply                                          NA         NA         NA       NA
+density:noV:pdemandnodes:averagesupply                                   2.177e+27  1.477e+10  1.474e+17   <2e-16
+nodeCnt:avgFC:pdemandnodes:averagesupply                                -1.402e+25  9.467e+07 -1.480e+17   <2e-16
+density:avgFC:pdemandnodes:averagesupply                                 1.433e+27  9.746e+09  1.471e+17   <2e-16
+noV:avgFC:pdemandnodes:averagesupply                                     2.039e+24  1.375e+07  1.484e+17   <2e-16
+nodeCnt:psupplynodes:pdemandnodes:averagesupply                         -3.473e+29  2.345e+12 -1.481e+17   <2e-16
+density:psupplynodes:pdemandnodes:averagesupply                          2.992e+31  2.048e+14  1.461e+17   <2e-16
+noV:psupplynodes:pdemandnodes:averagesupply                              4.465e+28  3.017e+11  1.480e+17   <2e-16
+avgFC:psupplynodes:pdemandnodes:averagesupply                           -9.680e+26  6.573e+09 -1.473e+17   <2e-16
+nodeCnt:density:noV:gamma                                               -1.978e+28  1.447e+11 -1.367e+17   <2e-16
+nodeCnt:density:avgFC:gamma                                                     NA         NA         NA       NA
+nodeCnt:noV:avgFC:gamma                                                         NA         NA         NA       NA
+density:noV:avgFC:gamma                                                         NA         NA         NA       NA
+nodeCnt:density:psupplynodes:gamma                                      -5.125e+32  3.475e+15 -1.475e+17   <2e-16
+nodeCnt:noV:psupplynodes:gamma                                                  NA         NA         NA       NA
+density:noV:psupplynodes:gamma                                          -1.612e+31  1.095e+14 -1.472e+17   <2e-16
+nodeCnt:avgFC:psupplynodes:gamma                                                NA         NA         NA       NA
+density:avgFC:psupplynodes:gamma                                                NA         NA         NA       NA
+noV:avgFC:psupplynodes:gamma                                                    NA         NA         NA       NA
+nodeCnt:density:pdemandnodes:gamma                                      -1.611e+33  1.092e+16 -1.475e+17   <2e-16
+nodeCnt:noV:pdemandnodes:gamma                                                  NA         NA         NA       NA
+density:noV:pdemandnodes:gamma                                          -4.566e+30  3.099e+13 -1.473e+17   <2e-16
+nodeCnt:avgFC:pdemandnodes:gamma                                                NA         NA         NA       NA
+density:avgFC:pdemandnodes:gamma                                                NA         NA         NA       NA
+noV:avgFC:pdemandnodes:gamma                                                    NA         NA         NA       NA
+nodeCnt:psupplynodes:pdemandnodes:gamma                                  6.851e+32  4.629e+15  1.480e+17   <2e-16
+density:psupplynodes:pdemandnodes:gamma                                 -6.219e+34  4.253e+17 -1.463e+17   <2e-16
+noV:psupplynodes:pdemandnodes:gamma                                     -8.938e+31  6.039e+14 -1.480e+17   <2e-16
+avgFC:psupplynodes:pdemandnodes:gamma                                           NA         NA         NA       NA
+nodeCnt:density:averagesupply:gamma                                      2.752e+26  5.844e+09  4.709e+16   <2e-16
+nodeCnt:noV:averagesupply:gamma                                                 NA         NA         NA       NA
+density:noV:averagesupply:gamma                                         -1.278e+26  8.709e+08 -1.468e+17   <2e-16
+nodeCnt:avgFC:averagesupply:gamma                                        6.875e+23  4.644e+06  1.481e+17   <2e-16
+density:avgFC:averagesupply:gamma                                        1.090e+25  7.072e+07  1.541e+17   <2e-16
+noV:avgFC:averagesupply:gamma                                           -3.726e+22  2.595e+05 -1.435e+17   <2e-16
+nodeCnt:psupplynodes:averagesupply:gamma                                -9.966e+26  1.108e+10 -8.996e+16   <2e-16
+density:psupplynodes:averagesupply:gamma                                 4.208e+29  2.872e+12  1.465e+17   <2e-16
+noV:psupplynodes:averagesupply:gamma                                     3.061e+26  2.172e+09  1.409e+17   <2e-16
+avgFC:psupplynodes:averagesupply:gamma                                   8.242e+24  5.900e+07  1.397e+17   <2e-16
+nodeCnt:pdemandnodes:averagesupply:gamma                                 4.290e+27  3.041e+10  1.411e+17   <2e-16
+density:pdemandnodes:averagesupply:gamma                                 1.406e+29  1.031e+12  1.364e+17   <2e-16
+noV:pdemandnodes:averagesupply:gamma                                     5.359e+24  1.378e+08  3.890e+16   <2e-16
+avgFC:pdemandnodes:averagesupply:gamma                                   5.288e+25  3.802e+08  1.391e+17   <2e-16
+psupplynodes:pdemandnodes:averagesupply:gamma                            2.255e+27  3.746e+11  6.019e+15   <2e-16
+nodeCnt:density:noV:avgFC:psupplynodes                                   1.072e+24  7.526e+06  1.425e+17   <2e-16
+nodeCnt:density:noV:avgFC:pdemandnodes                                   1.202e+24  8.547e+06  1.406e+17   <2e-16
+nodeCnt:density:noV:psupplynodes:pdemandnodes                            1.556e+28  1.104e+11  1.410e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes                         -4.806e+27  3.396e+10 -1.415e+17   <2e-16
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes                                     NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:pdemandnodes                              2.159e+26  1.505e+09  1.434e+17   <2e-16
+nodeCnt:density:noV:avgFC:averagesupply                                 -1.002e+21  7.353e+03 -1.363e+17   <2e-16
+nodeCnt:density:noV:psupplynodes:averagesupply                          -5.791e+25  3.989e+08 -1.452e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes:averagesupply                        -3.112e+25  2.114e+08 -1.472e+17   <2e-16
+nodeCnt:noV:avgFC:psupplynodes:averagesupply                                    NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:averagesupply                            -9.011e+23  6.098e+06 -1.478e+17   <2e-16
+nodeCnt:density:noV:pdemandnodes:averagesupply                           3.094e+25  2.016e+08  1.535e+17   <2e-16
+nodeCnt:density:avgFC:pdemandnodes:averagesupply                        -9.873e+25  6.708e+08 -1.472e+17   <2e-16
+nodeCnt:noV:avgFC:pdemandnodes:averagesupply                                    NA         NA         NA       NA
+density:noV:avgFC:pdemandnodes:averagesupply                            -2.575e+23  1.749e+06 -1.472e+17   <2e-16
+nodeCnt:density:psupplynodes:pdemandnodes:averagesupply                 -2.085e+30  1.429e+13 -1.459e+17   <2e-16
+nodeCnt:noV:psupplynodes:pdemandnodes:averagesupply                             NA         NA         NA       NA
+density:noV:psupplynodes:pdemandnodes:averagesupply                     -1.346e+28  8.946e+10 -1.504e+17   <2e-16
+nodeCnt:avgFC:psupplynodes:pdemandnodes:averagesupply                    4.393e+25  2.963e+08  1.483e+17   <2e-16
+density:avgFC:psupplynodes:pdemandnodes:averagesupply                   -3.593e+27  2.461e+10 -1.460e+17   <2e-16
+noV:avgFC:psupplynodes:pdemandnodes:averagesupply                       -5.572e+24  3.766e+07 -1.480e+17   <2e-16
+nodeCnt:density:noV:avgFC:gamma                                                 NA         NA         NA       NA
+nodeCnt:density:noV:psupplynodes:gamma                                   1.221e+29  8.432e+11  1.448e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes:gamma                                        NA         NA         NA       NA
+nodeCnt:noV:avgFC:psupplynodes:gamma                                            NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:gamma                                            NA         NA         NA       NA
+nodeCnt:density:noV:pdemandnodes:gamma                                  -5.073e+28  3.270e+11 -1.551e+17   <2e-16
+nodeCnt:density:avgFC:pdemandnodes:gamma                                        NA         NA         NA       NA
+nodeCnt:noV:avgFC:pdemandnodes:gamma                                            NA         NA         NA       NA
+density:noV:avgFC:pdemandnodes:gamma                                            NA         NA         NA       NA
+nodeCnt:density:psupplynodes:pdemandnodes:gamma                          4.250e+33  2.911e+16  1.460e+17   <2e-16
+nodeCnt:noV:psupplynodes:pdemandnodes:gamma                                     NA         NA         NA       NA
+density:noV:psupplynodes:pdemandnodes:gamma                              2.891e+31  1.925e+14  1.501e+17   <2e-16
+nodeCnt:avgFC:psupplynodes:pdemandnodes:gamma                                   NA         NA         NA       NA
+density:avgFC:psupplynodes:pdemandnodes:gamma                                   NA         NA         NA       NA
+noV:avgFC:psupplynodes:pdemandnodes:gamma                                       NA         NA         NA       NA
+nodeCnt:density:noV:averagesupply:gamma                                 -1.238e+24  8.621e+06 -1.436e+17   <2e-16
+nodeCnt:density:avgFC:averagesupply:gamma                               -8.693e+22  1.449e+06 -5.999e+16   <2e-16
+nodeCnt:noV:avgFC:averagesupply:gamma                                           NA         NA         NA       NA
+density:noV:avgFC:averagesupply:gamma                                    3.153e+22  2.150e+05  1.467e+17   <2e-16
+nodeCnt:density:psupplynodes:averagesupply:gamma                        -2.198e+28  1.519e+11 -1.447e+17   <2e-16
+nodeCnt:noV:psupplynodes:averagesupply:gamma                                    NA         NA         NA       NA
+density:noV:psupplynodes:averagesupply:gamma                            -1.660e+24  1.881e+07 -8.829e+16   <2e-16
+nodeCnt:avgFC:psupplynodes:averagesupply:gamma                           2.121e+23  2.624e+06  8.082e+16   <2e-16
+density:avgFC:psupplynodes:averagesupply:gamma                          -1.115e+26  7.615e+08 -1.465e+17   <2e-16
+noV:avgFC:psupplynodes:averagesupply:gamma                              -7.887e+22  5.596e+05 -1.410e+17   <2e-16
+nodeCnt:density:pdemandnodes:averagesupply:gamma                        -6.534e+26  4.506e+09 -1.450e+17   <2e-16
+nodeCnt:noV:pdemandnodes:averagesupply:gamma                                    NA         NA         NA       NA
+density:noV:pdemandnodes:averagesupply:gamma                             4.896e+24  3.561e+07  1.375e+17   <2e-16
+nodeCnt:avgFC:pdemandnodes:averagesupply:gamma                          -1.098e+24  7.743e+06 -1.418e+17   <2e-16
+density:avgFC:pdemandnodes:averagesupply:gamma                          -3.639e+25  2.671e+08 -1.362e+17   <2e-16
+noV:avgFC:pdemandnodes:averagesupply:gamma                              -1.027e+21  3.166e+04 -3.244e+16   <2e-16
+nodeCnt:psupplynodes:pdemandnodes:averagesupply:gamma                    5.957e+26  3.990e+09  1.493e+17   <2e-16
+density:psupplynodes:pdemandnodes:averagesupply:gamma                    6.067e+28  4.287e+11  1.415e+17   <2e-16
+noV:psupplynodes:pdemandnodes:averagesupply:gamma                        2.345e+24  2.884e+07  8.131e+16   <2e-16
+avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                     -1.503e+25  1.495e+08 -1.005e+17   <2e-16
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes                     -3.922e+24  2.781e+07 -1.410e+17   <2e-16
+nodeCnt:density:noV:avgFC:psupplynodes:averagesupply                     6.842e+21  4.701e+04  1.456e+17   <2e-16
+nodeCnt:density:noV:avgFC:pdemandnodes:averagesupply                    -4.579e+21  3.013e+04 -1.520e+17   <2e-16
+nodeCnt:density:noV:psupplynodes:pdemandnodes:averagesupply              1.515e+25  1.093e+08  1.386e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes:averagesupply            2.552e+26  1.751e+09  1.457e+17   <2e-16
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes:averagesupply                       NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply                1.553e+24  1.031e+07  1.506e+17   <2e-16
+nodeCnt:density:noV:avgFC:psupplynodes:gamma                                    NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:pdemandnodes:gamma                                    NA         NA         NA       NA
+nodeCnt:density:noV:psupplynodes:pdemandnodes:gamma                     -6.016e+28  4.344e+11 -1.385e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes:gamma                           NA         NA         NA       NA
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes:gamma                               NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:pdemandnodes:gamma                               NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:averagesupply:gamma                            3.122e+20  2.171e+03  1.438e+17   <2e-16
+nodeCnt:density:noV:psupplynodes:averagesupply:gamma                     3.194e+22  2.800e+05  1.141e+17   <2e-16
+nodeCnt:density:avgFC:psupplynodes:averagesupply:gamma                   5.680e+24  3.924e+07  1.447e+17   <2e-16
+nodeCnt:noV:avgFC:psupplynodes:averagesupply:gamma                              NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:averagesupply:gamma                              NA         NA         NA       NA
+nodeCnt:density:noV:pdemandnodes:averagesupply:gamma                            NA         NA         NA       NA
+nodeCnt:density:avgFC:pdemandnodes:averagesupply:gamma                          NA         NA         NA       NA
+nodeCnt:noV:avgFC:pdemandnodes:averagesupply:gamma                              NA         NA         NA       NA
+density:noV:avgFC:pdemandnodes:averagesupply:gamma                              NA         NA         NA       NA
+nodeCnt:density:psupplynodes:pdemandnodes:averagesupply:gamma                   NA         NA         NA       NA
+nodeCnt:noV:psupplynodes:pdemandnodes:averagesupply:gamma                       NA         NA         NA       NA
+density:noV:psupplynodes:pdemandnodes:averagesupply:gamma                       NA         NA         NA       NA
+nodeCnt:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                     NA         NA         NA       NA
+density:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                     NA         NA         NA       NA
+noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                         NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply               NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes:gamma                       NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:psupplynodes:averagesupply:gamma                      NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:pdemandnodes:averagesupply:gamma                      NA         NA         NA       NA
+nodeCnt:density:noV:psupplynodes:pdemandnodes:averagesupply:gamma               NA         NA         NA       NA
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma             NA         NA         NA       NA
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                 NA         NA         NA       NA
+density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                 NA         NA         NA       NA
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma         NA         NA         NA       NA
+                                                                           
+(Intercept)                                                             ***
+nodeCnt                                                                 ***
+density                                                                 ***
+noV                                                                     ***
+avgFC                                                                   ***
+psupplynodes                                                            ***
+pdemandnodes                                                            ***
+averagesupply                                                           ***
+gamma                                                                   ***
+nodeCnt:density                                                         ***
+nodeCnt:noV                                                                
+density:noV                                                             ***
+nodeCnt:avgFC                                                           ***
+density:avgFC                                                           ***
+noV:avgFC                                                               ***
+nodeCnt:psupplynodes                                                    ***
+density:psupplynodes                                                    ***
+noV:psupplynodes                                                        ***
+avgFC:psupplynodes                                                      ***
+nodeCnt:pdemandnodes                                                    ***
+density:pdemandnodes                                                    ***
+noV:pdemandnodes                                                        ***
+avgFC:pdemandnodes                                                      ***
+psupplynodes:pdemandnodes                                               ***
+nodeCnt:averagesupply                                                   ***
+density:averagesupply                                                   ***
+noV:averagesupply                                                       ***
+avgFC:averagesupply                                                     ***
+psupplynodes:averagesupply                                              ***
+pdemandnodes:averagesupply                                              ***
+nodeCnt:gamma                                                           ***
+density:gamma                                                           ***
+noV:gamma                                                               ***
+avgFC:gamma                                                                
+psupplynodes:gamma                                                      ***
+pdemandnodes:gamma                                                      ***
+averagesupply:gamma                                                     ***
+nodeCnt:density:noV                                                     ***
+nodeCnt:density:avgFC                                                   ***
+nodeCnt:noV:avgFC                                                          
+density:noV:avgFC                                                       ***
+nodeCnt:density:psupplynodes                                            ***
+nodeCnt:noV:psupplynodes                                                   
+density:noV:psupplynodes                                                ***
+nodeCnt:avgFC:psupplynodes                                              ***
+density:avgFC:psupplynodes                                              ***
+noV:avgFC:psupplynodes                                                  ***
+nodeCnt:density:pdemandnodes                                            ***
+nodeCnt:noV:pdemandnodes                                                   
+density:noV:pdemandnodes                                                ***
+nodeCnt:avgFC:pdemandnodes                                              ***
+density:avgFC:pdemandnodes                                              ***
+noV:avgFC:pdemandnodes                                                  ***
+nodeCnt:psupplynodes:pdemandnodes                                       ***
+density:psupplynodes:pdemandnodes                                       ***
+noV:psupplynodes:pdemandnodes                                           ***
+avgFC:psupplynodes:pdemandnodes                                         ***
+nodeCnt:density:averagesupply                                           ***
+nodeCnt:noV:averagesupply                                                  
+density:noV:averagesupply                                               ***
+nodeCnt:avgFC:averagesupply                                             ***
+density:avgFC:averagesupply                                             ***
+noV:avgFC:averagesupply                                                 ***
+nodeCnt:psupplynodes:averagesupply                                      ***
+density:psupplynodes:averagesupply                                      ***
+noV:psupplynodes:averagesupply                                          ***
+avgFC:psupplynodes:averagesupply                                        ***
+nodeCnt:pdemandnodes:averagesupply                                      ***
+density:pdemandnodes:averagesupply                                      ***
+noV:pdemandnodes:averagesupply                                          ***
+avgFC:pdemandnodes:averagesupply                                        ***
+psupplynodes:pdemandnodes:averagesupply                                 ***
+nodeCnt:density:gamma                                                   ***
+nodeCnt:noV:gamma                                                          
+density:noV:gamma                                                       ***
+nodeCnt:avgFC:gamma                                                        
+density:avgFC:gamma                                                        
+noV:avgFC:gamma                                                            
+nodeCnt:psupplynodes:gamma                                              ***
+density:psupplynodes:gamma                                              ***
+noV:psupplynodes:gamma                                                  ***
+avgFC:psupplynodes:gamma                                                   
+nodeCnt:pdemandnodes:gamma                                              ***
+density:pdemandnodes:gamma                                              ***
+noV:pdemandnodes:gamma                                                  ***
+avgFC:pdemandnodes:gamma                                                   
+psupplynodes:pdemandnodes:gamma                                         ***
+nodeCnt:averagesupply:gamma                                             ***
+density:averagesupply:gamma                                             ***
+noV:averagesupply:gamma                                                 ***
+avgFC:averagesupply:gamma                                               ***
+psupplynodes:averagesupply:gamma                                        ***
+pdemandnodes:averagesupply:gamma                                        ***
+nodeCnt:density:noV:avgFC                                               ***
+nodeCnt:density:noV:psupplynodes                                        ***
+nodeCnt:density:avgFC:psupplynodes                                      ***
+nodeCnt:noV:avgFC:psupplynodes                                             
+density:noV:avgFC:psupplynodes                                          ***
+nodeCnt:density:noV:pdemandnodes                                        ***
+nodeCnt:density:avgFC:pdemandnodes                                      ***
+nodeCnt:noV:avgFC:pdemandnodes                                             
+density:noV:avgFC:pdemandnodes                                          ***
+nodeCnt:density:psupplynodes:pdemandnodes                               ***
+nodeCnt:noV:psupplynodes:pdemandnodes                                      
+density:noV:psupplynodes:pdemandnodes                                   ***
+nodeCnt:avgFC:psupplynodes:pdemandnodes                                 ***
+density:avgFC:psupplynodes:pdemandnodes                                 ***
+noV:avgFC:psupplynodes:pdemandnodes                                     ***
+nodeCnt:density:noV:averagesupply                                       ***
+nodeCnt:density:avgFC:averagesupply                                     ***
+nodeCnt:noV:avgFC:averagesupply                                            
+density:noV:avgFC:averagesupply                                         ***
+nodeCnt:density:psupplynodes:averagesupply                              ***
+nodeCnt:noV:psupplynodes:averagesupply                                     
+density:noV:psupplynodes:averagesupply                                  ***
+nodeCnt:avgFC:psupplynodes:averagesupply                                ***
+density:avgFC:psupplynodes:averagesupply                                ***
+noV:avgFC:psupplynodes:averagesupply                                    ***
+nodeCnt:density:pdemandnodes:averagesupply                              ***
+nodeCnt:noV:pdemandnodes:averagesupply                                     
+density:noV:pdemandnodes:averagesupply                                  ***
+nodeCnt:avgFC:pdemandnodes:averagesupply                                ***
+density:avgFC:pdemandnodes:averagesupply                                ***
+noV:avgFC:pdemandnodes:averagesupply                                    ***
+nodeCnt:psupplynodes:pdemandnodes:averagesupply                         ***
+density:psupplynodes:pdemandnodes:averagesupply                         ***
+noV:psupplynodes:pdemandnodes:averagesupply                             ***
+avgFC:psupplynodes:pdemandnodes:averagesupply                           ***
+nodeCnt:density:noV:gamma                                               ***
+nodeCnt:density:avgFC:gamma                                                
+nodeCnt:noV:avgFC:gamma                                                    
+density:noV:avgFC:gamma                                                    
+nodeCnt:density:psupplynodes:gamma                                      ***
+nodeCnt:noV:psupplynodes:gamma                                             
+density:noV:psupplynodes:gamma                                          ***
+nodeCnt:avgFC:psupplynodes:gamma                                           
+density:avgFC:psupplynodes:gamma                                           
+noV:avgFC:psupplynodes:gamma                                               
+nodeCnt:density:pdemandnodes:gamma                                      ***
+nodeCnt:noV:pdemandnodes:gamma                                             
+density:noV:pdemandnodes:gamma                                          ***
+nodeCnt:avgFC:pdemandnodes:gamma                                           
+density:avgFC:pdemandnodes:gamma                                           
+noV:avgFC:pdemandnodes:gamma                                               
+nodeCnt:psupplynodes:pdemandnodes:gamma                                 ***
+density:psupplynodes:pdemandnodes:gamma                                 ***
+noV:psupplynodes:pdemandnodes:gamma                                     ***
+avgFC:psupplynodes:pdemandnodes:gamma                                      
+nodeCnt:density:averagesupply:gamma                                     ***
+nodeCnt:noV:averagesupply:gamma                                            
+density:noV:averagesupply:gamma                                         ***
+nodeCnt:avgFC:averagesupply:gamma                                       ***
+density:avgFC:averagesupply:gamma                                       ***
+noV:avgFC:averagesupply:gamma                                           ***
+nodeCnt:psupplynodes:averagesupply:gamma                                ***
+density:psupplynodes:averagesupply:gamma                                ***
+noV:psupplynodes:averagesupply:gamma                                    ***
+avgFC:psupplynodes:averagesupply:gamma                                  ***
+nodeCnt:pdemandnodes:averagesupply:gamma                                ***
+density:pdemandnodes:averagesupply:gamma                                ***
+noV:pdemandnodes:averagesupply:gamma                                    ***
+avgFC:pdemandnodes:averagesupply:gamma                                  ***
+psupplynodes:pdemandnodes:averagesupply:gamma                           ***
+nodeCnt:density:noV:avgFC:psupplynodes                                  ***
+nodeCnt:density:noV:avgFC:pdemandnodes                                  ***
+nodeCnt:density:noV:psupplynodes:pdemandnodes                           ***
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes                         ***
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes                                
+density:noV:avgFC:psupplynodes:pdemandnodes                             ***
+nodeCnt:density:noV:avgFC:averagesupply                                 ***
+nodeCnt:density:noV:psupplynodes:averagesupply                          ***
+nodeCnt:density:avgFC:psupplynodes:averagesupply                        ***
+nodeCnt:noV:avgFC:psupplynodes:averagesupply                               
+density:noV:avgFC:psupplynodes:averagesupply                            ***
+nodeCnt:density:noV:pdemandnodes:averagesupply                          ***
+nodeCnt:density:avgFC:pdemandnodes:averagesupply                        ***
+nodeCnt:noV:avgFC:pdemandnodes:averagesupply                               
+density:noV:avgFC:pdemandnodes:averagesupply                            ***
+nodeCnt:density:psupplynodes:pdemandnodes:averagesupply                 ***
+nodeCnt:noV:psupplynodes:pdemandnodes:averagesupply                        
+density:noV:psupplynodes:pdemandnodes:averagesupply                     ***
+nodeCnt:avgFC:psupplynodes:pdemandnodes:averagesupply                   ***
+density:avgFC:psupplynodes:pdemandnodes:averagesupply                   ***
+noV:avgFC:psupplynodes:pdemandnodes:averagesupply                       ***
+nodeCnt:density:noV:avgFC:gamma                                            
+nodeCnt:density:noV:psupplynodes:gamma                                  ***
+nodeCnt:density:avgFC:psupplynodes:gamma                                   
+nodeCnt:noV:avgFC:psupplynodes:gamma                                       
+density:noV:avgFC:psupplynodes:gamma                                       
+nodeCnt:density:noV:pdemandnodes:gamma                                  ***
+nodeCnt:density:avgFC:pdemandnodes:gamma                                   
+nodeCnt:noV:avgFC:pdemandnodes:gamma                                       
+density:noV:avgFC:pdemandnodes:gamma                                       
+nodeCnt:density:psupplynodes:pdemandnodes:gamma                         ***
+nodeCnt:noV:psupplynodes:pdemandnodes:gamma                                
+density:noV:psupplynodes:pdemandnodes:gamma                             ***
+nodeCnt:avgFC:psupplynodes:pdemandnodes:gamma                              
+density:avgFC:psupplynodes:pdemandnodes:gamma                              
+noV:avgFC:psupplynodes:pdemandnodes:gamma                                  
+nodeCnt:density:noV:averagesupply:gamma                                 ***
+nodeCnt:density:avgFC:averagesupply:gamma                               ***
+nodeCnt:noV:avgFC:averagesupply:gamma                                      
+density:noV:avgFC:averagesupply:gamma                                   ***
+nodeCnt:density:psupplynodes:averagesupply:gamma                        ***
+nodeCnt:noV:psupplynodes:averagesupply:gamma                               
+density:noV:psupplynodes:averagesupply:gamma                            ***
+nodeCnt:avgFC:psupplynodes:averagesupply:gamma                          ***
+density:avgFC:psupplynodes:averagesupply:gamma                          ***
+noV:avgFC:psupplynodes:averagesupply:gamma                              ***
+nodeCnt:density:pdemandnodes:averagesupply:gamma                        ***
+nodeCnt:noV:pdemandnodes:averagesupply:gamma                               
+density:noV:pdemandnodes:averagesupply:gamma                            ***
+nodeCnt:avgFC:pdemandnodes:averagesupply:gamma                          ***
+density:avgFC:pdemandnodes:averagesupply:gamma                          ***
+noV:avgFC:pdemandnodes:averagesupply:gamma                              ***
+nodeCnt:psupplynodes:pdemandnodes:averagesupply:gamma                   ***
+density:psupplynodes:pdemandnodes:averagesupply:gamma                   ***
+noV:psupplynodes:pdemandnodes:averagesupply:gamma                       ***
+avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                     ***
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes                     ***
+nodeCnt:density:noV:avgFC:psupplynodes:averagesupply                    ***
+nodeCnt:density:noV:avgFC:pdemandnodes:averagesupply                    ***
+nodeCnt:density:noV:psupplynodes:pdemandnodes:averagesupply             ***
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes:averagesupply           ***
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes:averagesupply                  
+density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply               ***
+nodeCnt:density:noV:avgFC:psupplynodes:gamma                               
+nodeCnt:density:noV:avgFC:pdemandnodes:gamma                               
+nodeCnt:density:noV:psupplynodes:pdemandnodes:gamma                     ***
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes:gamma                      
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes:gamma                          
+density:noV:avgFC:psupplynodes:pdemandnodes:gamma                          
+nodeCnt:density:noV:avgFC:averagesupply:gamma                           ***
+nodeCnt:density:noV:psupplynodes:averagesupply:gamma                    ***
+nodeCnt:density:avgFC:psupplynodes:averagesupply:gamma                  ***
+nodeCnt:noV:avgFC:psupplynodes:averagesupply:gamma                         
+density:noV:avgFC:psupplynodes:averagesupply:gamma                         
+nodeCnt:density:noV:pdemandnodes:averagesupply:gamma                       
+nodeCnt:density:avgFC:pdemandnodes:averagesupply:gamma                     
+nodeCnt:noV:avgFC:pdemandnodes:averagesupply:gamma                         
+density:noV:avgFC:pdemandnodes:averagesupply:gamma                         
+nodeCnt:density:psupplynodes:pdemandnodes:averagesupply:gamma              
+nodeCnt:noV:psupplynodes:pdemandnodes:averagesupply:gamma                  
+density:noV:psupplynodes:pdemandnodes:averagesupply:gamma                  
+nodeCnt:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                
+density:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                
+noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma                    
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply          
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes:gamma                  
+nodeCnt:density:noV:avgFC:psupplynodes:averagesupply:gamma                 
+nodeCnt:density:noV:avgFC:pdemandnodes:averagesupply:gamma                 
+nodeCnt:density:noV:psupplynodes:pdemandnodes:averagesupply:gamma          
+nodeCnt:density:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma        
+nodeCnt:noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma            
+density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma            
+nodeCnt:density:noV:avgFC:psupplynodes:pdemandnodes:averagesupply:gamma    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance:  77.241  on 179  degrees of freedom
+Residual deviance: 792.960  on   0  degrees of freedom
+AIC: 1153
+
+Number of Fisher Scoring iterations: 15
+
